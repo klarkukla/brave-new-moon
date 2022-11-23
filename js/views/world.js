@@ -47,12 +47,12 @@ function(
             this.scene.add(this.camera);
 
             // fog
-            //this.scene.fog = new THREE.Fog(0xb79f79, 1, 3000);
+            this.scene.fog = new THREE.Fog(0xffefba, 1, 3000);
 
             // renderer
-            this.renderer = new THREE.WebGLRenderer();
+            this.renderer = new THREE.WebGLRenderer({alpha: true});
             this.renderer.setSize(window.innerWidth, window.innerHeight);
-            this.renderer.setClearColor(0xb79f79, 1);
+            this.renderer.setClearColor(0xffefba);
             this.renderer.gammaInput = true;
             this.renderer.gammaOutput = true;
             this.$el.append(this.renderer.domElement);
@@ -68,7 +68,7 @@ function(
             floor.position.y = 0;
             floor.rotation.x = Math.PI / 2;
             floor.receiveShadow = true;
-            //this.scene.add(floor);
+            this.scene.add(floor);
 
             // controls
             this.controls = new THREE.PointerLockControls(this.camera, {x:0, y:200, z: 1800});
@@ -79,7 +79,7 @@ function(
             * effects
             *
             * */
-            this.PPManager = new PostProcessingManager(this.scene, this.renderer, this.camera);
+            //this.PPManager = new PostProcessingManager(this.scene, this.renderer, this.camera);
 
             /*
              *
@@ -107,7 +107,6 @@ function(
         render: function (time) {
 
             this.controls.update(Date.now() - time, 0.2);
-            this.renderer.setClearColor(0xb79f79, 1);
 
             for(var i = 0; i < this.globals.meshObjects.length; i++){
                 if(this.globals.meshObjects[i] !== undefined){

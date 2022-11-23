@@ -7,7 +7,6 @@
 }
 /*globals*/
 html {
-  font-size: 62.5%;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -15,18 +14,15 @@ html {
 body {
   width: 100%;
   height: 100%;
-  color: #2e2e2e;
+  color: #000000;
   font-family: 'dinprolight', helvetica, arial, sans-serif;
-  font-size: 1.4em;
-  line-height: 1.5;
+  font-size: .9rem;
   overflow: hidden;
-  background-color: #ffefba;
 }
 /*-------------------*/
 #ui {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.02);
 }
 #world {
   width: 100%;
@@ -51,8 +47,7 @@ body {
   width: 100%;
   height: 150px;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  bottom: 80px;
   margin: auto auto;
   text-align: center;
 }
@@ -75,8 +70,8 @@ body {
 }
 #click a {
   display: block;
-  color: #fff;
-  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
@@ -100,14 +95,13 @@ body {
 /*about*/
 #about {
   position: absolute;
-  bottom: 0;
-  width: 95%;
-  padding: 2.5%;
+  bottom: 20px;
+  width: 100%;
   text-align: center;
 }
 #about a {
-  color: #fff;
-  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
@@ -127,8 +121,8 @@ body {
 #popup {
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -145,20 +139,20 @@ body {
   position: absolute;
 }
 #popup #txt-container a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: 700;
 }
 #popup #txt-container h2 {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 #popup.hide {
   display: none;
 }
 a#hidePopup {
   display: block;
-  color: #fff;
-  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   text-decoration: none;
   text-align: center;
   -webkit-border-radius: 999px;
@@ -181,8 +175,8 @@ a#hidePopup {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffefba;
+  color: #000000;
 }
 #preloader {
   width: 300px;
@@ -197,7 +191,7 @@ a#hidePopup {
 }
 #preloader p {
   margin: 0;
-  color: #eee;
+  color: #000000;
 }
 #loader {
   width: 25px;
@@ -213,13 +207,13 @@ a#hidePopup {
   float: left;
 }
 .borderline {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 .a-circle {
   display: block;
-  color: #2e2e2e;
-  background-color: #fff;
+  color: #000000;
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
@@ -240,7 +234,7 @@ span.big {
   position: absolute;
   width: 25px;
   height: 25px;
-  background: #ffffff;
+  background: #000000;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   -ms-border-radius: 25px;
@@ -280,7 +274,7 @@ span.big {
   top: -6px;
   width: 10px;
   height: 10px;
-  background: #ffffff;
+  background: #000000;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -ms-border-radius: 8px;
